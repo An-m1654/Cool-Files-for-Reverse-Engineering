@@ -1,0 +1,21 @@
+#--------------------------------------------------------------
+# Made by AnmPro
+# Reference:    https://zeldamods.org/wiki/SARC
+#               https://mk8.tockdom.com/wiki/SARC_(File_Format)
+# Description:  This is a file extension for a file system like
+#               , ISO(Windows)/DMG(MacOS) like thing ig. IDK
+#--------------------------------------------------------------
+0	string	SARC		Nintendo Propietary SARC Filesystem file,
+>0x12	beshort	0
+
+>>0x6	beshort 0xFEFF		Big Endian,
+>>>0x10	beshort	x		Version %x,
+>>>0x4	beshort	x		Header Length %u,
+>>>0x8	belong	x		Content Size %u,
+>>>0x0C	belong	x		Content Offset %u
+
+>>0x6	beshort	0xFFFE		Little Endian,
+>>>0x10	leshort	x		Version %x,
+>>>0x4	leshort	x		Header Length %u,
+>>>0x8	lelong	x		Content Size %u,
+>>>0x0C	lelong	x		Content Offset %u

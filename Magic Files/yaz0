@@ -1,0 +1,12 @@
+#------------------------------------------------------------
+# Made by AnmPro
+# Reference: 	https://zeldamods.org/wiki/Yaz0
+#		http://www.amnoid.de/gc/yaz0.txt
+# Description:	This is a Breath Of The Wild compression type
+#		Or so I think... idk I just did this for BOTW
+#		/ even TOTK (Tears of the Kingdom)
+#------------------------------------------------------------
+
+0	string		Yaz0	Nintendo Propietary Yaz0 compression,
+>4	belong  	x	content size %u,
+>8	belong  	x	data aligment %u
